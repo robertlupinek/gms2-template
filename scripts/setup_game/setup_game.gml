@@ -1,4 +1,4 @@
-
+global.camera_zoom = 2;
 
 global.p1_map = ds_map_create();
 global.p1_map[? "max_health"] = 10;

@@ -4,9 +4,9 @@
     "mvc": "1.1",
     "name": "e6f42228-1d7e-4e35-9dd4-b29df5324fae",
     "children": [
-        "be38999f-a101-4778-920b-c84500f4094e",
-        "b4e79387-7ef4-4562-8b4d-f3061930434a",
-        "f5707150-eccd-4db7-9b8c-b77180beffad"
+        "dc254a5d-49ed-4804-b631-03a97f9d2022",
+        "c59898bd-1a67-4728-8f34-f87b842ffac8",
+        "0ea3d6b7-5dee-4533-9344-8973192e3304"
     ],
     "filterType": "GMScript",
     "folderName": "game_functions",
