@@ -13,6 +13,63 @@ global.save_data_map = ds_map_create();
 //Add Player Stats to Save Game ds_map use for export to json.
 ds_map_add_map(global.save_data_map,"player_1",global.p1_map);
 
+//Buttons 2d array variable
+global.buttons = 0;
+//Variables used to nagivate the 2d array
+global.button_x = 0;
+global.button_y = 0;
+//Globals for game controls
+
+
+global.any_down = false;
+global.any_up = false;
+global.any_left = false;
+global.any_right = false;
+global.any_b1 = false;
+global.any_b2 = false;
+global.any_b3 = false;
+global.any_b4 = false;
+global.any_b5 = false;
+global.any_b6 = false;
+global.any_start = false;
+
+global.any_down_pressed = false;
+global.any_up_pressed = false;
+global.any_left_pressed = false;
+global.any_right_pressed = false;
+global.any_b1_pressed = false;
+global.any_b2_pressed = false;
+global.any_b3_pressed = false;
+global.any_b4_pressed = false;
+global.any_b5_pressed = false;
+global.any_b6_pressed = false;
+global.any_start_pressed = false;
+
+global.p_down[0] = false;
+global.p_up[0]  = false;
+global.p_left[0]  = false;
+global.p_right[0]  = false;
+global.p_b1[0]  = false;
+global.p_b2[0]  = false;
+global.p_b3[0]  = false;
+global.p_b4[0]  = false;
+global.p_b5[0]  = false;
+global.p_b6[0]  = false;
+global.p_start[0]  = false;
+global.p_control[0] = 0;
+
+global.p_down_pressed[0] = false;
+global.p_up_pressed[0]  = false;
+global.p_left_pressed[0]  = false;
+global.p_right_pressed[0]  = false;
+global.p_b1_pressed[0]  = false;
+global.p_b2_pressed[0]  = false;
+global.p_b3_pressed[0]  = false;
+global.p_b4_pressed[0]  = false;
+global.p_b5_pressed[0]  = false;
+global.p_b6_pressed[0]  = false;
+global.p_start_pressed[0]  = false;
+global.p_control[0] = 0;
 
 ///Font configuration
 //Fonts
