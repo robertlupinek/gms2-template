@@ -1,14 +1,19 @@
-/// @description Insert description here
+/// @description Button object used for creating in game and menu buttons.
+// This object COULD potentially be used as a basis for an inventory
+
+button_text = "New Game";  //Text to display on the button
+xscale = 1; //Button image x scale
+yscale = 1; //Button image y scale
+angle = 0;  //Button image angle
+selected = false;  //Is the button currently selected?
+mouse_type = false; //Is this button operated using mouse?
+trigger_script = -1;  //What script should trigger if this button is used?
 
 
-//Only required if using outline shader
+///"Special" Effects
+
+//Init the outline shader
 outline_init();
-
-button_text = "New Game";
-xscale = 1;
-yscale = 1;
-angle = 0; 
-selected = false;
 
 //Make outline go up and down
 alarm[0] = 60;

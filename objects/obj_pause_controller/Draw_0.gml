@@ -19,5 +19,5 @@ if ( paused )
     draw_set_alpha(1);
     draw_set_color(c_white);
 	draw_set_halign(fa_center);
-	draw_text( cx + cw / 2,cy + ch /2,"Paused!\nPress " + pause_key + " to resume");
+	draw_text( cx + cw / 2,cy + 20,"Game Paused!");
 }
