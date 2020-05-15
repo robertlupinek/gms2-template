@@ -16,7 +16,6 @@ if gamepad_is_connected(i)
     draw_text(xx, yy + 100, "Right V Axis - " + string(gamepad_axis_value(i, gp_axisrv)));   
     draw_text(xx, yy + 120, "Fire Rate - " + string(gamepad_button_value(i, gp_shoulderrb)));
     }
-
 }
 
 */

@@ -25,3 +25,5 @@ camera_set_view_size(_camera,_view_w/_zoom,_view_h/_zoom);
 
 //Set the application surfact to the appropriate size
 surface_resize(application_surface, view_wport[0], view_hport[0]);
+
+return _camera;

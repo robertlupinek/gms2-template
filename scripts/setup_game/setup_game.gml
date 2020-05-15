@@ -3,6 +3,9 @@
 //Camera zoom level
 global.camera_zoom = 2;
 
+
+//Player count
+global.player_count = 2;
 ///Player Stats 
 global.p1_map = ds_map_create();
 global.p1_map[? "max_health"] = 10;
@@ -45,6 +48,10 @@ global.any_b5_pressed = false;
 global.any_b6_pressed = false;
 global.any_start_pressed = false;
 
+
+global.p_control[0] = 4;
+global.p_kb[0] = true;
+
 global.p_down[0] = false;
 global.p_up[0]  = false;
 global.p_left[0]  = false;
@@ -56,7 +63,6 @@ global.p_b4[0]  = false;
 global.p_b5[0]  = false;
 global.p_b6[0]  = false;
 global.p_start[0]  = false;
-global.p_control[0] = 0;
 
 global.p_down_pressed[0] = false;
 global.p_up_pressed[0]  = false;
@@ -69,7 +75,36 @@ global.p_b4_pressed[0]  = false;
 global.p_b5_pressed[0]  = false;
 global.p_b6_pressed[0]  = false;
 global.p_start_pressed[0]  = false;
-global.p_control[0] = 0;
+
+
+global.p_control[1] = 5;
+global.p_kb[1] = true;
+
+global.p_down[1] = false;
+global.p_up[1]  = false;
+global.p_left[1]  = false;
+global.p_right[1]  = false;
+global.p_b1[1]  = false;
+global.p_b2[1]  = false;
+global.p_b3[1]  = false;
+global.p_b4[1]  = false;
+global.p_b5[1]  = false;
+global.p_b6[1]  = false;
+global.p_start[1]  = false;
+
+global.p_down_pressed[1] = false;
+global.p_up_pressed[1]  = false;
+global.p_left_pressed[1]  = false;
+global.p_right_pressed[1]  = false;
+global.p_b1_pressed[1]  = false;
+global.p_b2_pressed[1]  = false;
+global.p_b3_pressed[1]  = false;
+global.p_b4_pressed[1]  = false;
+global.p_b5_pressed[1]  = false;
+global.p_b6_pressed[1]  = false;
+global.p_start_pressed[1]  = false;
+
+
 
 ///Font configuration
 //Fonts
