@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+assign_input();
+
 for (var _p=0;_p < array_length_1d(global.p_pad);_p++){
 
 	if ( global.pad_up_pressed[global.p_pad[_p] ] ){
