@@ -1,58 +1,61 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if ( global.any_up_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "up";
-}
+for (var _p=0;_p < array_length_1d(global.p_pad);_p++){
 
-if ( global.any_down_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "down";
-}
-
-if ( global.any_left_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "left";
-}
-
-if ( global.any_right_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "right";
-}
-
-
-if ( global.any_b1_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B1";
-}
-
-if ( global.any_b2_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B2";
-}
-
-if ( global.any_b3_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B3";
-}
-
-if ( global.any_b4_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B4";
-}
-
-if ( global.any_b5_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B5";
-}
-
-if ( global.any_b6_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "B6";
-}
-
-if ( global.any_start_pressed ){
-	my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
-	my_text.text = "START";
+	if ( global.pad_up_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "up";
+	}
+	
+	if ( global.pad_down_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "down";
+	}
+	
+	if ( global.pad_left_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "left";
+	}
+	
+	if ( global.pad_right_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "right";
+	}
+	
+	
+	if ( global.pad_b1_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B1";
+	}
+	
+	if ( global.pad_b2_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B2";
+	}
+	
+	if ( global.pad_b3_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B3";
+	}
+	
+	if ( global.pad_b4_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B4";
+	}
+	
+	if ( global.pad_b5_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B5";
+	}
+	
+	if ( global.pad_b6_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "B6";
+	}
+	
+	if ( global.pad_start_pressed[global.p_pad[_p] ] ){
+		my_text = instance_create_layer(220 + random(20), 120,"Instances",obj_bouncing_text);
+		my_text.text = string(_p) + " - " + "START";
+	}
 }

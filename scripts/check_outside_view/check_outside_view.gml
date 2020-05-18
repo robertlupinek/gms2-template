@@ -7,8 +7,8 @@
 
 
 var _x = argument0; //Left side of rectangle
-var _y = argument1; //Top of rectangle
-var _x2 = argument2; //Right side of rectangle to check
+var _x2 = argument1; //Right of rectangle
+var _y = argument2; //Top side of rectangle to check
 var _y2 = argument3; //Botton of rectangle
 var _view = argument4; //Camera view to check against
 
@@ -26,21 +26,25 @@ var _cw = camera_get_view_width(_camera);
 var _ch = camera_get_view_height(_camera);
 var _outside = false;
 
-//Check right
-if ( _x > _cx + _cw && _check_r ){
-	_outside = true;
-}
 //Check left
 if ( _x2 < _cx && _check_l ) {
 	_outside = true;
 }
-//Check bottom
-if ( _y > _cy + _ch && _check_b ){
-	_outside += true;
+
+//Check right
+if ( _x > _cx + _cw && _check_r ){
+	_outside = true;
 }
+
 //Check top
 if ( _y2 < _cy && _check_t ) {
-	_outside += true;
+	_outside = true;
+}
+
+
+//Check bottom
+if ( _y > _cy + _ch && _check_b ){
+	_outside = true;
 }
 
 return _outside;

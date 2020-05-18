@@ -3,9 +3,6 @@
 //Camera zoom level
 global.camera_zoom = 2;
 
-
-//Player count
-global.player_count = 2;
 ///Player Stats 
 global.p1_map = ds_map_create();
 global.p1_map[? "max_health"] = 10;
@@ -22,7 +19,6 @@ global.buttons = 0;
 global.button_x = 0;
 global.button_y = 0;
 //Globals for game controls
-
 
 global.any_down = false;
 global.any_up = false;
@@ -48,62 +44,40 @@ global.any_b5_pressed = false;
 global.any_b6_pressed = false;
 global.any_start_pressed = false;
 
+///Player assigned to the pad
+//Each indice represents a player
+//Set the player to keyboard by setting p_pad[x] = 8, where index x is the player.
+global.p_pad = [];
 
-global.p_control[0] = 4;
-global.p_kb[0] = true;
+//Controller / gamepad
+// Gamepad 8 is the keyboard :)
+for ( var _pads = 0; _pads <= 8; _pads++;){
+	
+	global.pad_down[_pads] = false;
+	global.pad_up[_pads]  = false;
+	global.pad_left[_pads]  = false;
+	global.pad_right[_pads]  = false;
+	global.pad_b1[_pads]  = false;
+	global.pad_b2[_pads]  = false;
+	global.pad_b3[_pads]  = false;
+	global.pad_b4[_pads]  = false;
+	global.pad_b5[_pads]  = false;
+	global.pad_b6[_pads]  = false;
+	global.pad_start[_pads]  = false;
+	
+	global.pad_down_pressed[_pads] = false;
+	global.pad_up_pressed[_pads]  = false;
+	global.pad_left_pressed[_pads]  = false;
+	global.pad_right_pressed[_pads]  = false;
+	global.pad_b1_pressed[_pads]  = false;
+	global.pad_b2_pressed[_pads]  = false;
+	global.pad_b3_pressed[_pads]  = false;
+	global.pad_b4_pressed[_pads]  = false;
+	global.pad_b5_pressed[_pads]  = false;
+	global.pad_b6_pressed[_pads]  = false;
+	global.pad_start_pressed[_pads]  = false;
 
-global.p_down[0] = false;
-global.p_up[0]  = false;
-global.p_left[0]  = false;
-global.p_right[0]  = false;
-global.p_b1[0]  = false;
-global.p_b2[0]  = false;
-global.p_b3[0]  = false;
-global.p_b4[0]  = false;
-global.p_b5[0]  = false;
-global.p_b6[0]  = false;
-global.p_start[0]  = false;
-
-global.p_down_pressed[0] = false;
-global.p_up_pressed[0]  = false;
-global.p_left_pressed[0]  = false;
-global.p_right_pressed[0]  = false;
-global.p_b1_pressed[0]  = false;
-global.p_b2_pressed[0]  = false;
-global.p_b3_pressed[0]  = false;
-global.p_b4_pressed[0]  = false;
-global.p_b5_pressed[0]  = false;
-global.p_b6_pressed[0]  = false;
-global.p_start_pressed[0]  = false;
-
-
-global.p_control[1] = 5;
-global.p_kb[1] = true;
-
-global.p_down[1] = false;
-global.p_up[1]  = false;
-global.p_left[1]  = false;
-global.p_right[1]  = false;
-global.p_b1[1]  = false;
-global.p_b2[1]  = false;
-global.p_b3[1]  = false;
-global.p_b4[1]  = false;
-global.p_b5[1]  = false;
-global.p_b6[1]  = false;
-global.p_start[1]  = false;
-
-global.p_down_pressed[1] = false;
-global.p_up_pressed[1]  = false;
-global.p_left_pressed[1]  = false;
-global.p_right_pressed[1]  = false;
-global.p_b1_pressed[1]  = false;
-global.p_b2_pressed[1]  = false;
-global.p_b3_pressed[1]  = false;
-global.p_b4_pressed[1]  = false;
-global.p_b5_pressed[1]  = false;
-global.p_b6_pressed[1]  = false;
-global.p_start_pressed[1]  = false;
-
+}
 
 
 ///Font configuration
