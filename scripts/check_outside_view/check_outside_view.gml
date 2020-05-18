@@ -7,15 +7,15 @@
 
 
 var _x = argument0; //Left side of rectangle
-var _x2 = argument1; //Right of rectangle
-var _y = argument2; //Top side of rectangle to check
+var _y = argument1; //Top side of rectangle to check
+var _x2 = argument2; //Right of rectangle
 var _y2 = argument3; //Botton of rectangle
 var _view = argument4; //Camera view to check against
 
 //Provide which directions outside the view you want to check
 var _check_l = argument5;
-var _check_r = argument6;
-var _check_t = argument7;
+var _check_t = argument6;
+var _check_r = argument7;
 var _check_b = argument8;
 
 //Get the camera configuration
@@ -27,23 +27,23 @@ var _ch = camera_get_view_height(_camera);
 var _outside = false;
 
 //Check left
-if ( _x2 < _cx && _check_l ) {
+if ( _x < _cx && _check_l ) {
 	_outside = true;
 }
 
 //Check right
-if ( _x > _cx + _cw && _check_r ){
+if ( _x2 > _cx + _cw && _check_r ){
 	_outside = true;
 }
 
 //Check top
-if ( _y2 < _cy && _check_t ) {
+if ( _y < _cy && _check_t ) {
 	_outside = true;
 }
 
 
 //Check bottom
-if ( _y > _cy + _ch && _check_b ){
+if ( _y2 > _cy + _ch && _check_b ){
 	_outside = true;
 }
 

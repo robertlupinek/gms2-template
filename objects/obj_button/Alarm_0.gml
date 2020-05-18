@@ -1,4 +1,4 @@
-/// @description Grow selected button pulse
+/// @description Pulse button outline
 
 
 alarm[0] = 30;
