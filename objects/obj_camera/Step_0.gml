@@ -1,12 +1,6 @@
 /// @description move camera object
 // 
 
-//Sample camera movement
-
-if ( instance_exists(target) ) {
-	x = target.x;
-	y = target.y;
-}
 
 
 ///Camera effects

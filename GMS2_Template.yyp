@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "98d5840a-1272-4d97-bb25-f387ff6c94f8",
+            "Value": {
+                "id": "589f3bd7-515a-4352-82b7-8895f94fc95f",
+                "resourcePath": "scripts\\center_camera\\center_camera.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9d19d44b-cdc9-41da-9c2a-f0e6674ad8aa",
             "Value": {
                 "id": "68c22447-4b0d-4a1e-82a8-2695fb4a20ea",
@@ -843,9 +851,10 @@
         "b4e79387-7ef4-4562-8b4d-f3061930434a",
         "be38999f-a101-4778-920b-c84500f4094e",
         "f5707150-eccd-4db7-9b8c-b77180beffad",
-        "744041b0-2f8c-4700-8521-a211dd561ebc",
         "d5ec443e-a04f-4efd-8bb2-c940268610eb",
         "4fd30df6-7db1-4987-bcfd-9747b7c51b88",
+        "98d5840a-1272-4d97-bb25-f387ff6c94f8",
+        "744041b0-2f8c-4700-8521-a211dd561ebc",
         "d894ebd8-8b85-4bd3-a2d6-a3c38e74f6d0",
         "377a59e7-cfe3-428a-820d-b8b6f334ea74",
         "63764309-9409-40df-98cf-72d70380dba8",
