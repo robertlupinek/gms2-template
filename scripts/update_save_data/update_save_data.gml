@@ -2,4 +2,5 @@
 
 //Insert update code below
 
-global.p1_map[? "max_health" ] += 1;
+//Which room were we in
+global.game_state_map[? "room"] = room_get_name(room);

@@ -3,6 +3,11 @@
 //Camera zoom level
 global.camera_zoom = 2;
 
+
+
+///Game state
+global.game_state_map = ds_map_create();
+global.game_state_map[? "room"]= "rm_test_room";
 ///Player Stats 
 global.p1_map = ds_map_create();
 global.p1_map[? "max_hp"] = 3;
@@ -17,10 +22,15 @@ global.p3_map[? "max_hp"] = 3;
 global.p4_map = ds_map_create();
 global.p4_map[? "max_hp"] = 3;
 
+
+
+
 ///Save game configuration
 global.save_file_name = "saved_game.json";
 global.save_data_map = ds_map_create();
-//Add Player Stats to Save Game ds_map use for export to json.
+//Add game state to the Save Gamee ds_map to use for json exports
+//Add Player Stats to Save Game ds_map to use for json exports
+ds_map_add_map(global.save_data_map,"game_state",global.game_state_map);
 ds_map_add_map(global.save_data_map,"player_1",global.p1_map);
 ds_map_add_map(global.save_data_map,"player_2",global.p2_map);
 ds_map_add_map(global.save_data_map,"player_3",global.p3_map);

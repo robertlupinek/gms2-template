@@ -10,8 +10,8 @@ clear_buttons();
 if ( room_get_name(room) == "rm_main_menu" ) {
 	//Display Load Game and auto select IF the save game file exists
 	if ( file_exists( global.save_file_name ) ){
-		create_buttons(spr_big_button,237,138,0,1,"Load Game",true,false,trigger_button_debug);
-		create_buttons(spr_big_button,237,188,0,0,"New Game",false,false,trigger_button_next);
+		create_buttons(spr_big_button,237,138,0,0,"Load Game",true,false,trigger_button_load);
+		create_buttons(spr_big_button,237,188,0,1,"New Game",false,false,trigger_button_next);
 		create_buttons(spr_big_button,237,238,0,2,"Quit",false,false,trigger_button_quit);
 	}
 	else {

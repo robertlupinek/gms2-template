@@ -7,6 +7,8 @@ var p_text = "";
 var p_x = 0;
 var p_y = 0;
 var hp = 0;
+var max_hp = 0;
+
 
 //Loop through all possible players
 for ( var p = 0; p < 4; p++; ){	

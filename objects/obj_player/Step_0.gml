@@ -38,11 +38,10 @@ if ( global.pad_b1[my_pad] && alarm[1] <= 0 ){
 	my_b.speed = 4;
 	my_b.friction = -0.2;
 	my_b.image_angle = image_angle;
+	my_b.creator = id;
 	alarm[1] = 20;
 	//Screen shake
-	with(obj_camera){
-		alarm[0] = 5;
-	}
+
 }
 
 //Set the image index to 0 if the ship is not moving

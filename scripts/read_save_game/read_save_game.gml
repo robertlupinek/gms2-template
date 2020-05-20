@@ -9,6 +9,7 @@ if ( file_exists( _save_filename ) ){
 	//Create temporary ds_map from JSON object loaded from file.
 	var _json_map = json_decode(_buffer_string);
 	// Copy map with correct key from loaded JSON object to correct ds_map.
+	ds_map_copy( global.game_state_map, _json_map[? "game_state"]);
 	ds_map_copy( global.p1_map, _json_map[? "player_1"]);
 	ds_map_copy( global.p2_map, _json_map[? "player_2"]);
 	ds_map_copy( global.p3_map, _json_map[? "player_3"]);
