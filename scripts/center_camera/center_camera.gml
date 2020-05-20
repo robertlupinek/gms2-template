@@ -69,5 +69,5 @@ if ( instance_exists(_object) ) {
 	}
 }
 
-//Only for debugging purposes you can run this in the draw event
-draw_rectangle(_left,_top,_right,_bottom,true);
+//Only for debugging purposes you can run this in the draw event to see the rectangle 
+//draw_rectangle(_left,_top,_right,_bottom,true);

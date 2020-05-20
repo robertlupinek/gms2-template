@@ -5,13 +5,26 @@ global.camera_zoom = 2;
 
 ///Player Stats 
 global.p1_map = ds_map_create();
-global.p1_map[? "max_health"] = 10;
+global.p1_map[? "max_hp"] = 3;
+
+global.p2_map = ds_map_create();
+global.p2_map[? "max_hp"] = 3;
+
+
+global.p3_map = ds_map_create();
+global.p3_map[? "max_hp"] = 3;
+
+global.p4_map = ds_map_create();
+global.p4_map[? "max_hp"] = 3;
 
 ///Save game configuration
 global.save_file_name = "saved_game.json";
 global.save_data_map = ds_map_create();
 //Add Player Stats to Save Game ds_map use for export to json.
 ds_map_add_map(global.save_data_map,"player_1",global.p1_map);
+ds_map_add_map(global.save_data_map,"player_2",global.p2_map);
+ds_map_add_map(global.save_data_map,"player_3",global.p3_map);
+ds_map_add_map(global.save_data_map,"player_4",global.p4_map);
 
 //Buttons 2d array variable
 global.buttons = 0;

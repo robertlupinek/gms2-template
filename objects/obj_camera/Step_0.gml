@@ -1,7 +1,11 @@
 /// @description move camera object
 // 
 
+//Move camera
 
+//Centers camera for multiple players
+
+center_camera(obj_player,id);
 
 ///Camera effects
 

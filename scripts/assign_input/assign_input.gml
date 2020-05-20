@@ -7,7 +7,7 @@ var input_new = false; //Used to flag if a new gamepad / keyboard was indeed ass
 for ( var c = 0; c < 9; c +=1; ){
 	//Check if button 1 is pressed or not and if it is see if the input device
 	//can be assigned to a player.
-	if ( global.pad_b1_pressed[c]  )
+	if ( global.pad_b1_pressed[c] || global.pad_b2_pressed[c] )
 	{
 		//If you haven't assigned input devices to all 4 players
 		if ( array_length_1d(global.p_pad) < 4 ){
