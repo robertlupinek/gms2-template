@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Ensure player does not go outside of view
 // You can write your code in this editor
 
 //Stay inside the camera at all costs

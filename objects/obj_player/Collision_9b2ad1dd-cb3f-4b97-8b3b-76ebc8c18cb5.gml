@@ -1,4 +1,5 @@
-/// @description Insert description here
+/// @description Basically useless tag effect between players for fun.
+//  
 // You can write your code in this editor
 if ( !alarm[0] && !other.it ){
 	it = false;

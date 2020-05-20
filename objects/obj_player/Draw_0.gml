@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description draw player and effects
 // You can write your code in this editor
 
 if ( p_number == 0 ){

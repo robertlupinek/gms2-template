@@ -1,6 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Main control loop for the player
+// 
 
+
+//Query the global.p_pad array to get the gamepad id 
+//assigned to this player object.  9 = keyboard 
 my_pad = global.p_pad[p_number];
 
 image_speed = 0;
@@ -29,7 +32,6 @@ if ( global.pad_left[my_pad] ){
 }
 
 //Shooting
-
 if ( global.pad_b1[my_pad] && alarm[1] <= 0 ){
 	var my_b = instance_create_layer(x+lengthdir_x(20,direction),y+lengthdir_y(20,direction),"Instances",obj_player_bullet);
 	my_b.direction = direction;
@@ -43,10 +45,13 @@ if ( global.pad_b1[my_pad] && alarm[1] <= 0 ){
 	}
 }
 
+//Set the image index to 0 if the ship is not moving
 if image_speed = 0 then image_index = 0;
 
 image_angle = direction;
 friction = 0.1;
+
+//Set a max speed
 if ( speed > max_speed ){
 	speed = max_speed;	
 }
