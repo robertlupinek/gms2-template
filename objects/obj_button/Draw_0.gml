@@ -1,6 +1,9 @@
 /// @description Draw button, text and effects
 // 
 
+draw_set_alpha(1);
+draw_set_color(c_white);
+
 var xoffset = 0;
 if ( selected ){
 	if ( alarm[0] < 30 ){

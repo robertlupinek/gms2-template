@@ -1,6 +1,8 @@
 draw_set_font(global.font_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
+draw_set_alpha(1);
+draw_set_color(c_white);
 
 //draw_text_ext(150,100,"Hello chief how are you doing!",10,20);
 

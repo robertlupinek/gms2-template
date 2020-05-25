@@ -1,6 +1,7 @@
 /// @description draw without the zoom
 // 
-
+draw_set_alpha(1);
+draw_set_color(c_white);
 //global.camera_zoom
 
 var p_text = "";
@@ -68,3 +69,17 @@ for ( var p = 0; p < 4; p++; ){
 }
 
 draw_sprite_ext(spr_water_mark,0, 890, 440,1,1,0,c_white,0.2);
+
+//Draw a black square over the screen while we are waiting for the 
+//room transition in to start.
+if ( alarm[0] ){
+	cx = camera_get_view_x(camera);
+	cy = camera_get_view_y(camera);
+	cw = camera_get_view_width(camera);
+	ch = camera_get_view_height(camera);
+	draw_set_alpha(1);
+	draw_set_color(c_black);
+	draw_rectangle(0,0,view_wport[0],view_hport[0],false);
+}
+
+

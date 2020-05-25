@@ -54,3 +54,14 @@ friction = 0.1;
 if ( speed > max_speed ){
 	speed = max_speed;	
 }
+
+//EXPLODE!!!!
+if ( hp <= 0 ){
+	with(obj_camera){
+		alarm[0] = 15;
+	}
+	repeat(40){
+		instance_create_layer(x-30+random(60),y-30+random(60),"Instances",obj_paricle_a);	
+	}
+	instance_destroy();
+}

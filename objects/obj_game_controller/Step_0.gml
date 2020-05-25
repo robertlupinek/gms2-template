@@ -29,9 +29,26 @@ if ( assign_input() ){
 		new_player.max_hp = global.p4_map[? "max_hp"];
 		new_player.hp = new_player.max_hp;
 	}	
+	
+	//Player has joined!  Game has started!
+	game_start = 1;
 }
 //Set camera target 
 with(obj_camera){
 	target = obj_player;	
 }
 
+
+//End game if there are no more player objects and game_start = 1;
+//Can go to Game Over screen or what ever you choose
+if ( game_start == 1 ){
+	if ( instance_number(obj_player) <= 0 ){
+		room_goto(rm_main_menu);
+	}
+}
+
+
+//Level complete!
+if ( !instance_number(obj_enemy) || keyboard_check_pressed(ord("N") )){
+	trigger_button_next();
+}

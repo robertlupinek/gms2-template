@@ -11,5 +11,7 @@ if ( other.id != creator ){
 		instance_create_layer(x,y,"Instances",obj_paricle_a);	
 	}
 	instance_destroy();
+	//Reduce player health
+	other.hp -= 1;
 
 }

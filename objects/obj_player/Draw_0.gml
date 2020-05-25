@@ -1,6 +1,9 @@
 /// @description draw player and effects
 // You can write your code in this editor
 
+draw_set_alpha(1);
+draw_set_color(c_white);
+
 if ( p_number == 0 ){
 	outline_color = c_green;	
 }
